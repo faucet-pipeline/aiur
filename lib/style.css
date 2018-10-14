@@ -1,0 +1,33 @@
+@media (min-width: 740px) {
+	body {
+		display: grid;
+		grid-template-columns: 300px auto;
+		grid-template-areas: "nav main";
+		grid-column-gap: 15px;
+		min-height: 100vh;
+	}
+}
+
+nav {
+	grid-area: nav;
+	border-right: 1px solid #f3f3f3;
+}
+
+main {
+	grid-area: main;
+}
+
+component-preview {
+	display: block;
+	border: 2px solid #f3f3f3;
+}
+
+component-preview .rendered {
+	padding: 1rem 2rem;
+}
+
+component-preview pre {
+	background: #f3f3f3;
+	margin: 0;
+	padding: 1rem 2rem;
+}

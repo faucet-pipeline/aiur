@@ -1,0 +1,23 @@
+{
+  "name": "faucet-pipeline-styleguide",
+  "version": "1.0.0",
+  "description": "Styleguide Generator for faucet-pipeline",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "eslint --cache lib && echo ✓",
+    "compile": "faucet",
+    "watch": "faucet --watch"
+  },
+  "keywords": [],
+  "author": "Lucas Dohmen <lucas@dohmen.io> (https://lucas.dohmen.io/)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commonmark": "^0.28.1",
+    "faucet-pipeline-core": "^1.0.0",
+    "faucet-pipeline-static": "^1.0.0",
+    "prismjs": "^1.15.0"
+  },
+  "devDependencies": {
+    "eslint-config-fnd": "^1.6.0"
+  }
+}
