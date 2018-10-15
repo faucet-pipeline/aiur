@@ -5,6 +5,7 @@ module.exports = {
 	styleguide: [{
 		source: "./pages.json",
 		target: "./dist",
+		port: 8080,
 		title: "Example Styleguide",
 		description: "This is an example styleguide"
 	}],
