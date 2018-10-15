@@ -1,3 +1,5 @@
+title: Button
+
 My favorite button:
 
 ```html

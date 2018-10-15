@@ -1,21 +1,17 @@
 [
   {
-    "title": "Welcome",
     "slug": "",
-    "file": "./README.md"
+    "file": "./components/welcome.md"
   },
   {
-    "title": "Atoms",
     "slug": "atoms",
 	"file": "./components/atoms.md",
 	"children": [
 	  {
-		"title": "Button",
 		"slug": "button",
 		"file": "./components/button/doc.md"
 	  },
 	  {
-		"title": "Strong",
 		"slug": "strong",
 		"file": "./components/strong/doc.md"
 	  }

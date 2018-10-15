@@ -13,7 +13,7 @@ module.exports = {
 		source: "./lib/style.css",
 		target: "./dist/style.css"
 	}],
-	watchDirs: ["./README.md", "./pages.json", "./components"],
+	watchDirs: ["./pages.json", "./components"],
 
 	// this will not be necessary when this is released
 	plugins: {
