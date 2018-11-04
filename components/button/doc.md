@@ -2,6 +2,9 @@ title: Button
 
 My favorite button:
 
-```html
-<button>Hello</button>
+```jsx
+import { Button } from "./components/button";
+import { createElement } from "complate-stream";
+
+<Button label="ok" />
 ```
