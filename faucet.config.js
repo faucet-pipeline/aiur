@@ -9,11 +9,11 @@ module.exports = {
 		title: "Example Styleguide",
 		description: "This is an example styleguide"
 	}],
-	static: [{
-		source: "./lib/style.css",
+	sass: [{
+		source: "./lib/style.scss",
 		target: "./dist/style.css"
 	}],
-	watchDirs: ["./pages.json", "./components"],
+	watchDirs: ["./pages.json", "./components", "./lib"],
 
 	// this will not be necessary when this is released
 	plugins: {

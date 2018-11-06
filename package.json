@@ -14,6 +14,7 @@
   "dependencies": {
     "commonmark": "^0.28.1",
     "faucet-pipeline-core": "^1.0.0",
+    "faucet-pipeline-sass": "^1.0.0",
     "faucet-pipeline-static": "^1.0.0",
     "live-server": "^1.2.0",
     "metacolon": "^1.0.0",
