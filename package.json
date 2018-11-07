@@ -14,7 +14,7 @@
   "dependencies": {
     "commonmark": "^0.28.1",
     "complate-stream": "^0.16.4",
-    "faucet-pipeline-core": "^1.0.0",
+    "faucet-pipeline-core": "^1.1.0",
     "faucet-pipeline-jsx": "^1.1.0",
     "faucet-pipeline-sass": "^1.0.0",
     "faucet-pipeline-static": "^1.0.0",
