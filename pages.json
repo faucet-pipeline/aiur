@@ -1,20 +1,10 @@
-[
-  {
-    "slug": "",
-    "file": "./components/welcome.md"
-  },
-  {
-    "slug": "atoms",
-	"file": "./components/atoms.md",
-	"children": [
-	  {
-		"slug": "button",
-		"file": "./components/button/doc.md"
-	  },
-	  {
-		"slug": "strong",
-		"file": "./components/strong/doc.md"
-	  }
-	]
-  }
-]
+{
+	"": "./components/welcome.md",
+	"blueprints": {
+		"file": "./components/atoms.md",
+		"children": {
+			"button": "./components/button/doc.md",
+			"strong": "./components/strong/doc.md"
+		}
+	}
+}
