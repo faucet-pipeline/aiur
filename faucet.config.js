@@ -3,7 +3,7 @@ let path = require("path");
 
 module.exports = {
 	styleguide: [{
-		source: "./pages.json",
+		source: "./pages.js",
 		target: "./dist",
 		port: 8080,
 		title: "Example Styleguide",
