@@ -25,6 +25,7 @@
     "faucet-pipeline-static": "^1.0.0",
     "live-server": "^1.2.0",
     "metacolon": "^1.0.0",
+    "mkdirp": "^0.5.1",
     "prismjs": "^1.15.0",
     "require-from-string": "^2.0.2"
   },

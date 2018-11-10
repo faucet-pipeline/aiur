@@ -7,7 +7,7 @@ describe("page model", () => {
 		let filepath = fixturesPath("welcome.md");
 		let page = new Page("", filepath);
 		assertSame(page.slug, "");
-		assertSame(page.filepath, filepath);
+		assertSame(page.sourcePath, filepath);
 		assertSame(page.children, null);
 		assertSame(page.language, undefined);
 		assertSame(page.title, undefined);
@@ -20,7 +20,7 @@ describe("page model", () => {
 		filepath = fixturesPath("button/doc.md");
 		page = new Page("button", filepath);
 		assertSame(page.slug, "button");
-		assertSame(page.filepath, filepath);
+		assertSame(page.sourcePath, filepath);
 		assertSame(`${page}`, `<Page \`button\` \`${filepath}\`>`);
 		await page.load();
 		assertSame(page.language, "de");

@@ -1,7 +1,11 @@
 /* global describe, it, beforeEach, afterEach */
 let Site = require("../lib/site");
 let { assertSame, fixturesPath, fixturesDir, MockAssetManager } = require("./util");
+let fs = require("fs");
 let assert = require("assert");
+let { promisify } = require("util");
+
+let readFile = promisify(fs.readFile);
 
 let assetManager = new MockAssetManager(fixturesDir);
 
@@ -14,6 +18,22 @@ describe("site model", () => {
 	});
 	afterEach(() => {
 		process.exit = exit;
+	});
+
+	it("generates HTML files", async () => {
+		let config = {
+			source: "./pages.js",
+			target: "./dist" // FIXME: use temporary directory instead
+		};
+
+		let site = new Site(config, assetManager);
+		await site.generate();
+		// XXX: inefficient and somewhat innacurate (due to potential unwanted
+		//      files); check directory hierarchy instead
+		assertSame(await readFile(fixturesPath("dist/index.html"), "utf8"), "TBD");
+		assertSame(await readFile(fixturesPath("dist/atoms.html"), "utf8"), "TBD");
+		assertSame(await readFile(fixturesPath("dist/atoms/button.html"), "utf8"), "TBD");
+		assertSame(await readFile(fixturesPath("dist/atoms/strong.html"), "utf8"), "TBD");
 	});
 
 	it("enforces essential configuration", async () => {
