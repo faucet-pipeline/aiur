@@ -4,6 +4,7 @@ let { assertSame, fixturesPath, fixturesDir, expectationsPath, MockAssetManager 
 let fs = require("fs");
 let assert = require("assert");
 let { promisify } = require("util");
+let rimraf = promisify(require("rimraf"));
 
 let readFile = promisify(fs.readFile);
 
@@ -18,6 +19,7 @@ describe("site model", () => {
 	});
 	afterEach(() => {
 		process.exit = exit;
+		return rimraf(fixturesPath("dist"));
 	});
 
 	it("generates HTML files", async () => {

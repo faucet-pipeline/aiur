@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint && npm run test:unit",
-    "test:unit": "mocha test/test_*.js && rm -r test/fixtures/dist",
+    "test:unit": "mocha test/test_*.js",
     "lint": "eslint --cache lib test && echo ✓",
     "compile": "faucet",
     "watch": "faucet --watch"
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "eslint-config-fnd": "^1.6.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.2"
   }
 }
