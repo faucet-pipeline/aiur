@@ -1,6 +1,6 @@
 /* global describe, it, beforeEach, afterEach */
 let Site = require("../lib/site");
-let { assertSame, fixturesPath, fixturesDir, MockAssetManager } = require("./util");
+let { assertSame, fixturesPath, fixturesDir, expectationsPath, MockAssetManager } = require("./util");
 let fs = require("fs");
 let assert = require("assert");
 let { promisify } = require("util");
@@ -30,10 +30,26 @@ describe("site model", () => {
 		await site.generate();
 		// XXX: inefficient and somewhat innacurate (due to potential unwanted
 		//      files); check directory hierarchy instead
-		assertSame(await readFile(fixturesPath("dist/index.html"), "utf8"), "TBD");
-		assertSame(await readFile(fixturesPath("dist/atoms.html"), "utf8"), "TBD");
-		assertSame(await readFile(fixturesPath("dist/atoms/button.html"), "utf8"), "TBD");
-		assertSame(await readFile(fixturesPath("dist/atoms/strong.html"), "utf8"), "TBD");
+		assertSame(await readFile(fixturesPath("dist/index.html"), "utf8"),
+				await readFile(expectationsPath("index.html"), "utf8"));
+
+		assertSame(await readFile(fixturesPath("dist/atoms/index.html"), "utf8"),
+				await readFile(expectationsPath("atoms/index.html"), "utf8"));
+
+		assertSame(await readFile(fixturesPath("dist/atoms/index.html"), "utf8"),
+				await readFile(expectationsPath("atoms/index.html"), "utf8"));
+
+		assertSame(await readFile(fixturesPath("dist/atoms/button/index.html"), "utf8"),
+				await readFile(expectationsPath("atoms/button/index.html"), "utf8"));
+
+		assertSame(await readFile(fixturesPath("dist/atoms/button/0.html"), "utf8"),
+				await readFile(expectationsPath("atoms/button/0.html"), "utf8"));
+
+		assertSame(await readFile(fixturesPath("dist/atoms/strong/index.html"), "utf8"),
+				await readFile(expectationsPath("atoms/strong/index.html"), "utf8"));
+
+		assertSame(await readFile(fixturesPath("dist/atoms/strong/0.html"), "utf8"),
+				await readFile(expectationsPath("atoms/strong/0.html"), "utf8"));
 	});
 
 	it("enforces essential configuration", async () => {

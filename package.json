@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint && npm run test:unit",
-    "test:unit": "mocha test/test_*.js",
+    "test:unit": "mocha test/test_*.js && rm -r test/fixtures/dist",
     "lint": "eslint --cache lib test && echo ✓",
     "compile": "faucet",
     "watch": "faucet --watch"
@@ -17,6 +17,7 @@
     "node": ">=8"
   },
   "dependencies": {
+    "acorn": "^6.0.4",
     "commonmark": "^0.28.1",
     "complate-stream": "^0.16.4",
     "faucet-pipeline-core": "^1.1.0",

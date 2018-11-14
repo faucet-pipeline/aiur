@@ -7,7 +7,11 @@ module.exports = {
 		target: "./dist",
 		port: 8080,
 		title: "Example Styleguide",
-		description: "This is an example styleguide"
+		description: "This is an example styleguide",
+		renderers: {
+			html: require("./lib/html"),
+			jsx: require("./lib/complate")
+		}
 	}],
 	sass: [{
 		source: "./lib/style.scss",
