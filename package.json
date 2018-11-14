@@ -17,7 +17,6 @@
     "node": ">=8"
   },
   "dependencies": {
-    "acorn": "^6.0.4",
     "commonmark": "^0.28.1",
     "complate-stream": "^0.16.4",
     "faucet-pipeline-core": "^1.1.0",
@@ -31,6 +30,7 @@
     "require-from-string": "^2.0.2"
   },
   "devDependencies": {
+    "acorn": "^6.0.4",
     "eslint-config-fnd": "^1.6.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.2"
