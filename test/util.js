@@ -8,6 +8,10 @@ exports.MockAssetManager = class MockAssetManager {
 	constructor(referenceDir) {
 		this.referenceDir = referenceDir;
 	}
+
+	// TODO: this is currently a private method
+	_report() {
+	}
 };
 
 exports.assertSame = assert.strictEqual;
