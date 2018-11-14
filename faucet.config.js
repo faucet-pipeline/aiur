@@ -19,6 +19,12 @@ module.exports = {
 	}],
 	watchDirs: ["./pages.json", "./components", "./lib"],
 
+	// TODO: this will be read from the site configuration
+	manifest: {
+		baseURI: "/",
+		webRoot: "./dist"
+	},
+
 	// this will not be necessary when this is released
 	plugins: {
 		styleguide: {
