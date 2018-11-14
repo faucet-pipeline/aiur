@@ -1,38 +1,38 @@
 {
-  "name": "faucet-pipeline-styleguide",
-  "version": "1.0.0",
-  "description": "Styleguide Generator for faucet-pipeline",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "npm run lint && npm run test:unit",
-    "test:unit": "mocha test/test_*.js",
-    "lint": "eslint --cache lib test && echo ✓",
-    "compile": "faucet",
-    "watch": "faucet --watch"
-  },
-  "keywords": [],
-  "author": "Lucas Dohmen <lucas@dohmen.io> (https://lucas.dohmen.io/)",
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">=8"
-  },
-  "dependencies": {
-    "commonmark": "^0.28.1",
-    "complate-stream": "^0.16.4",
-    "faucet-pipeline-core": "^1.1.0",
-    "faucet-pipeline-jsx": "^1.1.0",
-    "faucet-pipeline-sass": "^1.0.0",
-    "faucet-pipeline-static": "^1.0.0",
-    "live-server": "^1.2.0",
-    "metacolon": "^1.0.0",
-    "mkdirp": "^0.5.1",
-    "prismjs": "^1.15.0",
-    "require-from-string": "^2.0.2"
-  },
-  "devDependencies": {
-    "acorn": "^6.0.4",
-    "eslint-config-fnd": "^1.6.0",
-    "mocha": "^5.2.0",
-    "rimraf": "^2.6.2"
-  }
+	"name": "faucet-pipeline-styleguide",
+	"version": "1.0.0",
+	"description": "Styleguide Generator for faucet-pipeline",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "npm run lint && npm run test:unit",
+		"test:unit": "mocha test/test_*.js",
+		"lint": "eslint --cache lib test && echo ✓",
+		"compile": "faucet",
+		"watch": "faucet --watch"
+	},
+	"keywords": [],
+	"author": "Lucas Dohmen <lucas@dohmen.io> (https://lucas.dohmen.io/)",
+	"license": "Apache-2.0",
+	"engines": {
+		"node": ">=8"
+	},
+	"dependencies": {
+		"commonmark": "^0.28.1",
+		"complate-stream": "^0.16.4",
+		"faucet-pipeline-core": "^1.1.0",
+		"faucet-pipeline-jsx": "^1.1.0",
+		"faucet-pipeline-sass": "^1.0.0",
+		"faucet-pipeline-static": "^1.0.0",
+		"live-server": "^1.2.0",
+		"metacolon": "^1.0.0",
+		"mkdirp": "^0.5.1",
+		"prismjs": "^1.15.0",
+		"require-from-string": "^2.0.2"
+	},
+	"devDependencies": {
+		"acorn": "^6.0.4",
+		"eslint-config-fnd": "^1.6.0",
+		"mocha": "^5.2.0",
+		"rimraf": "^2.6.2"
+	}
 }
