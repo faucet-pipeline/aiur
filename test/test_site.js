@@ -24,7 +24,7 @@ describe("site model", () => {
 
 	it("generates HTML files", async () => {
 		let config = {
-			source: "./pages.js",
+			source: require(fixturesPath("./pages.js")),
 			target: "./dist" // FIXME: use temporary directory instead
 		};
 
@@ -60,33 +60,19 @@ describe("site model", () => {
 		let fn = () => new Site(config, assetManager);
 		assert.throws(fn, /exit 1/); // aborts due to missing `source` configuration
 
-		config.source = "./pages.js";
+		config.source = require(fixturesPath("./pages.js"));
 		assert.throws(fn, /exit 1/); // aborts due to missing `target` configuration
 
 		config.target = "dist";
 		assert.throws(fn, /exit 1/); // aborts due to non-relative `target` configuration
 
 		config.target = "./dist";
-		let site = fn();
-		assertSame(site.source, fixturesPath("pages.js"));
-		assertSame(site.target, fixturesPath("dist"));
-		assertSame(`${site}`, `<Site \`${fixturesPath("pages.js")}\`>`);
-	});
-
-	it("loads page hierarchy from file", async () => {
-		let config = {
-			source: "./pages.js",
-			target: "./dist"
-		};
-
-		let site = new Site(config, assetManager);
-		await site.load();
-		assertSame(`${site}`, `<Site \`${fixturesPath("pages.js")}\`>`);
+		fn(); // does not abort
 	});
 
 	it("generates URIs", async () => {
 		let config = {
-			source: "./pages.js",
+			source: require(fixturesPath("./pages.js")),
 			target: "./dist"
 		};
 
