@@ -13,7 +13,7 @@ describe("page model", () => {
 		assertSame(page.title, undefined);
 		assertSame(page.description, undefined);
 		await page.load();
-		assertSame(page.language, null);
+		assertSame(page.language, "en");
 		assertSame(page.title, "My Style Guide");
 		assertSame(page.body, "welcome to your style guide");
 

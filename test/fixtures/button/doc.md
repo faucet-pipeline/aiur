@@ -1,6 +1,6 @@
-lang: de
+language: de
 title: Button
-desc: interactive widget
+description: interactive widget
 
 My favorite button:
 

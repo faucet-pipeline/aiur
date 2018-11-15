@@ -1,4 +1,4 @@
-lang: en
+language: en
 title: strong
 description: pretty strong component
 
