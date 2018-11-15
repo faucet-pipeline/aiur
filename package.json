@@ -21,7 +21,7 @@
 		"complate-stream": "^0.16.4",
 		"faucet-pipeline-core": "^1.1.0",
 		"faucet-pipeline-jsx": "^1.1.0",
-		"faucet-pipeline-sass": "faucet-pipeline/faucet-pipeline-sass#bugfix-godot",
+		"faucet-pipeline-sass": "^1.1.0",
 		"faucet-pipeline-static": "^1.0.0",
 		"live-server": "^1.2.0",
 		"metacolon": "^1.0.0",

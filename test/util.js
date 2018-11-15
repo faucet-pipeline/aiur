@@ -4,9 +4,16 @@ let assert = require("assert");
 let FIXTURES = path.resolve(__dirname, "fixtures");
 let EXPECTATIONS = path.resolve(__dirname, "expectations");
 
+class MockManifest {
+	get() {
+		return "/style.css";
+	}
+}
+
 exports.MockAssetManager = class MockAssetManager {
 	constructor(referenceDir) {
 		this.referenceDir = referenceDir;
+		this.manifest = new MockManifest();
 	}
 
 	// TODO: this is currently a private method
