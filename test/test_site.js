@@ -25,7 +25,7 @@ describe("site model", () => {
 	it("generates HTML files", async () => {
 		let config = {
 			source: require(fixturesPath("./pages.js")),
-			target: "./dist" // FIXME: use temporary directory instead
+			target: "./dist"
 		};
 
 		let site = new Site(config, assetManager);
