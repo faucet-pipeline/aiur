@@ -23,7 +23,6 @@
 		"faucet-pipeline-jsx": "^1.1.0",
 		"faucet-pipeline-sass": "^1.1.0",
 		"faucet-pipeline-static": "^1.0.0",
-		"live-server": "^1.2.0",
 		"metacolon": "^1.0.0",
 		"mkdirp": "^0.5.1",
 		"prismjs": "^1.15.0",
