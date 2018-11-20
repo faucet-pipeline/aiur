@@ -1,7 +1,7 @@
 {
-	"name": "faucet-pipeline-styleguide",
-	"version": "1.0.0",
-	"description": "Styleguide Generator for faucet-pipeline",
+	"name": "aiur",
+	"version": "0.2.0",
+	"description": "styleguide generator",
 	"main": "lib/index.js",
 	"scripts": {
 		"test": "npm run lint && npm run test:unit",
@@ -30,6 +30,7 @@
 		"acorn": "^6.0.4",
 		"eslint-config-fnd": "^1.6.0",
 		"mocha": "^5.2.0",
+		"release-util-fnd": "^1.1.1",
 		"rimraf": "^2.6.2"
 	}
 }
