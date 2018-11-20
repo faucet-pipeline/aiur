@@ -2,3 +2,5 @@
 /.eslintcache
 
 /example/dist
+/example/node_modules
+/example/package-lock.json
