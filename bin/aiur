@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+"use strict";
+
+let faucet = require("faucet-pipeline-core");
+let parseCLI = require("../lib/cli");
+
+let { referenceDir, config, options } = parseCLI();
+faucet(referenceDir, config, options);

@@ -5,8 +5,8 @@ let { repr } = require("faucet-pipeline-core/lib/util");
 
 describe("page hierarchy", () => {
 	it("should turn page descriptors into a tree of pages", async () => {
-		let descriptors = require(fixturesPath("pages.js"));
-		let tree = generatePageTree(descriptors, fixturesDir);
+		let { pages } = require(fixturesPath("aiur.config.js"));
+		let tree = generatePageTree(pages, fixturesDir);
 
 		assertSame(tree.children.size, 2);
 		assertDeep(Array.from(tree.children.keys()), ["", "atoms"]);

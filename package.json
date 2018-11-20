@@ -3,6 +3,9 @@
 	"version": "0.2.0",
 	"description": "styleguide generator",
 	"main": "lib/index.js",
+	"bin": {
+		"aiur": "bin/aiur"
+	},
 	"scripts": {
 		"test": "npm run lint && npm run test:unit",
 		"test:unit": "mocha test/test_*.js",
@@ -22,6 +25,7 @@
 		"faucet-pipeline-sass": "^1.1.0",
 		"faucet-pipeline-static": "^1.0.0",
 		"metacolon": "^1.0.0",
+		"minimist": "^1.2.0",
 		"mkdirp": "^0.5.1",
 		"prismjs": "^1.15.0",
 		"require-from-string": "^2.0.2"

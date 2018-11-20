@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"start": "aiur --watch",
+		"compile": "aiur --fingerprint --compact"
+	},
+	"dependencies": {
+		"aiur": "..",
+		"prismjs": "^1.15.0"
+	}
+}

@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = {
+exports.pages = {
 	"": "./components/welcome.md",
 	atoms: {
 		file: "./components/atoms.md",
