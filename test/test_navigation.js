@@ -6,7 +6,7 @@ let { assertSame, fixturesPath, fixturesDir } = require("./util");
 describe("navigation", () => {
 	it("should generate a navigation", async () => {
 		let { pages } = require(fixturesPath("aiur.config.js"));
-		let tree = generatePageTree(pages, fixturesDir);
+		let tree = generatePageTree({ pages }, fixturesDir);
 		await Promise.all(tree.map(async page => page.load()));
 
 		let navigation = new Navigation({ baseURI: "/" });
