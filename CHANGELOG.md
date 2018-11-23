@@ -5,7 +5,7 @@ aiur version history
 v0.2.0
 ------
 
-_in progress_
+_2018-11-23_
 
 significant changes for end users:
 
