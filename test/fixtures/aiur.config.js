@@ -10,3 +10,5 @@ exports.pages = {
 		}
 	}
 };
+
+exports.language = "en";
