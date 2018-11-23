@@ -10,3 +10,6 @@ exports.pages = {
 		}
 	}
 };
+
+exports.title = "Example Styleguide";
+exports.language = "en";
