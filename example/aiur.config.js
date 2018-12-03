@@ -1,5 +1,8 @@
 "use strict";
 
+exports.title = "Example Styleguide";
+exports.language = "en";
+
 exports.pages = {
 	"": "./components/welcome.md",
 	atoms: {
@@ -10,6 +13,3 @@ exports.pages = {
 		}
 	}
 };
-
-exports.title = "Example Styleguide";
-exports.language = "en";
