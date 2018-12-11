@@ -19,9 +19,9 @@
 	},
 	"dependencies": {
 		"commonmark": "^0.28.1",
-		"complate-stream": "^0.16.4",
-		"faucet-pipeline-core": "^1.1.0",
-		"faucet-pipeline-jsx": "^1.1.0",
+		"complate-stream": "^0.16.5",
+		"faucet-pipeline-core": "^1.2.0",
+		"faucet-pipeline-jsx": "^1.1.1",
 		"faucet-pipeline-sass": "^1.1.0",
 		"faucet-pipeline-static": "^1.0.0",
 		"metacolon": "^1.0.0",
