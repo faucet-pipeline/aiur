@@ -1,6 +1,6 @@
 {
 	"name": "aiur",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "styleguide generator",
 	"main": "lib/index.js",
 	"bin": {
@@ -31,10 +31,10 @@
 		"require-from-string": "^2.0.2"
 	},
 	"devDependencies": {
-		"acorn": "^6.0.4",
+		"acorn": "^6.0.5",
 		"eslint-config-fnd": "^1.6.0",
 		"mocha": "^5.2.0",
 		"release-util-fnd": "^1.1.1",
-		"rimraf": "^2.6.2"
+		"rimraf": "^2.6.3"
 	}
 }

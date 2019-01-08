@@ -1,6 +1,14 @@
 aiur version history
 ====================
 
+v0.3.0
+
+_2019-01-08_
+
+significant changes for end users:
+
+* bug fix: show the heading in h1, not the title
+* upgrade dependencies
 
 v0.2.0
 ------
