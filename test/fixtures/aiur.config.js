@@ -1,5 +1,6 @@
 "use strict";
 
+exports.language = "en";
 exports.pages = {
 	"": "./welcome.md",
 	atoms: {
@@ -10,5 +11,3 @@ exports.pages = {
 		}
 	}
 };
-
-exports.language = "en";

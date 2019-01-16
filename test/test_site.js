@@ -53,4 +53,17 @@ describe("site model", () => {
 		assertSame(await readFile(fixturesPath("dist/atoms/strong/0.html"), "utf8"),
 				await readFile(expectationsPath("atoms/strong/0.html"), "utf8"));
 	});
+
+	it("provides access to aiur-specific URI generation", () => {
+		let { context } = require(fixturesPath("./env.js"));
+		let config = {
+			source: fixturesPath("./context.config.js"),
+			target: "./dist",
+			baseURI: "/"
+		};
+
+		new Site(config, assetManager); // eslint-disable-line no-new
+		assertSame(context.uri("pages", "atoms"), "/atoms");
+		assertSame(context.uri("static-assets", "style.css"), "/style.css");
+	});
 });
