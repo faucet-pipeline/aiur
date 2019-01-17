@@ -6,7 +6,7 @@ let EXPECTATIONS = path.resolve(__dirname, "expectations");
 
 class MockManifest {
 	get() {
-		return "/style.css";
+		return "/static/ass.et";
 	}
 }
 

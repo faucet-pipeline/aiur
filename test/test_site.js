@@ -64,6 +64,6 @@ describe("site model", () => {
 
 		new Site(config, assetManager); // eslint-disable-line no-new
 		assertSame(context.uri("pages", "atoms"), "/atoms");
-		assertSame(context.uri("static-assets", "style.css"), "/style.css");
+		assertSame(context.uri("static-assets", "style.css"), "/static/ass.et");
 	});
 });
