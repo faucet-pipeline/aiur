@@ -18,7 +18,7 @@
 		"node": ">=8"
 	},
 	"dependencies": {
-		"commonmark": "^0.28.1",
+		"commonmark": "^0.29.0",
 		"complate-stream": "^0.16.7",
 		"faucet-pipeline-core": "^1.2.0",
 		"faucet-pipeline-jsx": "^2.0.1",
