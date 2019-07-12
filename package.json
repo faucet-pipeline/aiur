@@ -28,7 +28,8 @@
 		"minimist": "^1.2.0",
 		"mkdirp": "^0.5.1",
 		"prismjs": "^1.17.1",
-		"require-from-string": "^2.0.2"
+		"require-from-string": "^2.0.2",
+		"thymeleaf": "^0.17.2"
 	},
 	"devDependencies": {
 		"acorn": "^7.0.0",
