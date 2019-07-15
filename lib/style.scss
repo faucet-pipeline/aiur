@@ -1,33 +1,72 @@
 @import "prismjs/themes/prism";
 
+$padding-layout: 1.5rem;
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+	font-size: 14px;
+}
+
 @media (min-width: 740px) {
 	body {
 		display: grid;
-		grid-template-columns: 300px auto;
+		grid-template-columns: max-content 1fr;
 		grid-template-areas: "nav main";
 		grid-column-gap: 15px;
 		min-height: 100vh;
 	}
 }
 
+h1 {
+	margin-bottom: 2rem;
+}
+
 nav {
-	grid-area: nav;
 	border-right: 1px solid #f3f3f3;
+	grid-area: nav;
+	padding: $padding-layout;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+nav li:not(nav > ul > li) {
+	list-style-type: none;
+	padding-left: 1rem;
 }
 
 main {
 	grid-area: main;
+	padding: $padding-layout;
+}
+
+main > :first-child,
+nav > :first-child {
+	margin-top: 0;
 }
 
 component-preview {
-	display: block;
 	border: 2px solid #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	margin-bottom: 1.75rem;
 }
 
 component-preview .rendered {
-	width: 100%;
+	width: auto;
 	border: 0;
 	padding: 1rem 2rem;
+}
+
+component-preview iframe {
+	flex-grow: 1;
 }
 
 component-preview pre {
