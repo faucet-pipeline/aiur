@@ -21,6 +21,20 @@ body {
 	}
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover,
+a:visited {
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 h1 {
 	margin-bottom: 2rem;
 }
@@ -39,6 +53,10 @@ nav ul {
 nav li:not(nav > ul > li) {
 	list-style-type: none;
 	padding-left: 1rem;
+}
+
+nav ul > :last-child {
+	margin-bottom: .5rem;
 }
 
 main {
@@ -67,7 +85,7 @@ component-preview iframe {
 component-preview .rendered {
 	width: auto;
 	border: 2px solid #f3f3f3;
-	padding: 2px;
+	margin: 2px;
 }
 
 component-preview pre {
