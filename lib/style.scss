@@ -57,16 +57,17 @@ component-preview {
 	flex-direction: column;
 	height: 80vh;
 	margin-bottom: 1.75rem;
-}
-
-component-preview .rendered {
-	width: auto;
-	border: 0;
-	padding: 1rem 2rem;
+	min-height: 500px;
 }
 
 component-preview iframe {
 	flex-grow: 1;
+}
+
+component-preview .rendered {
+	width: auto;
+	border: 2px solid #f3f3f3;
+	padding: 2px;
 }
 
 component-preview pre {
