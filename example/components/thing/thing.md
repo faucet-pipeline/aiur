@@ -9,6 +9,6 @@ This is a thing
 
 This is a thing fragment
 
-```thymeleaf
+```thymeleaf embed some-key="Super value!"
 <div th:replace="~{components/thing/thing.html :: thing}"></div>
 ```
