@@ -4,6 +4,6 @@ description: interactive widget
 
 My favorite button:
 
-```html
+```html embed key="value"
 <button>Hello</button>
 ```
