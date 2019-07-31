@@ -93,3 +93,54 @@ component-preview pre {
 	margin: 0;
 	padding: 1rem 2rem;
 }
+
+.aiur-status {
+	background-color: transparent;
+	border-radius: 0.64em;
+	color: transparent;
+	font-size: 0.75em;
+	font-weight: 700;
+	padding: 0.1em;
+	padding-right: 0.4em;
+	padding-left: .35em;
+	text-transform: uppercase;
+	margin-left: .25em;
+}
+
+.aiur-status::before {
+	border-radius: 50%;
+	bottom: .06em;
+	content: "";
+	display: inline-block;
+	height: .68em;
+	position: relative;
+	width: .68em;
+	margin-right: .25em;
+}
+
+:hover > .aiur-status-prototype,
+.aiur-status-prototype::before {
+	background-color: darkred;
+	color: white;
+}
+
+:hover > .aiur-status-wip,
+.aiur-status-wip::before {
+	background-color: coral;
+	color: white;
+}
+
+:hover > .aiur-status-ready,
+:hover > .aiur-status-ready::before {
+	background-color: springgreen;
+	color: black;
+}
+
+:hover > .aiur-status-prototype::before,
+:hover > .aiur-status-wip::before {
+	background-color: white;
+}
+
+:hover > .aiur-status-ready::before {
+	background-color: black;
+}

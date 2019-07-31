@@ -38,9 +38,6 @@ describe("site model", () => {
 		assertSame(await readFile(fixturesPath("dist/atoms/index.html"), "utf8"),
 				await readFile(expectationsPath("atoms/index.html"), "utf8"));
 
-		assertSame(await readFile(fixturesPath("dist/atoms/index.html"), "utf8"),
-				await readFile(expectationsPath("atoms/index.html"), "utf8"));
-
 		assertSame(await readFile(fixturesPath("dist/atoms/button/index.html"), "utf8"),
 				await readFile(expectationsPath("atoms/button/index.html"), "utf8"));
 
