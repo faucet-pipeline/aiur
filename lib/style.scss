@@ -50,9 +50,13 @@ nav ul {
 	padding-left: 0;
 }
 
-nav li:not(nav > ul > li) {
+nav li {
 	list-style-type: none;
 	padding-left: 1rem;
+}
+
+nav > ul > li {
+	padding-left: 0;
 }
 
 nav ul > :last-child {
@@ -118,29 +122,69 @@ component-preview pre {
 	margin-right: .25em;
 }
 
+#aiur-doc .aiur-status-prototype,
 :hover > .aiur-status-prototype,
 .aiur-status-prototype::before {
 	background-color: darkred;
 	color: white;
 }
 
+#aiur-doc .aiur-status-wip,
 :hover > .aiur-status-wip,
 .aiur-status-wip::before {
 	background-color: coral;
 	color: white;
 }
 
+#aiur-doc .aiur-status-ready,
+#aiur-doc .aiur-status-ready::before,
 :hover > .aiur-status-ready,
 :hover > .aiur-status-ready::before {
 	background-color: springgreen;
 	color: black;
 }
 
+#aiur-doc .aiur-status-prototype::before,
+#aiur-doc .aiur-status-wip::before,
 :hover > .aiur-status-prototype::before,
 :hover > .aiur-status-wip::before {
 	background-color: white;
 }
 
+#aiur-doc .aiur-status-ready::before,
 :hover > .aiur-status-ready::before {
 	background-color: black;
+}
+
+.aiur-doc-meta {
+	border-bottom: 1px solid gainsboro;
+	color: silver;
+	font-size: .875rem;
+	letter-spacing: .02em;
+	padding-bottom: .75rem;
+
+	&:hover {
+		color: black;
+	}
+}
+
+/* aiur-doc markdown */
+
+#aiur #aiur-doc {
+
+	h1 {
+		font-size: 2.75rem;
+		margin-top: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	a {
+		color: royalblue;
+	}
+
+	code {
+		background-color: linen;
+		border-radius: .33em;
+		padding: .15em .4em;
+	}
 }
