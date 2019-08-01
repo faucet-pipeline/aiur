@@ -122,6 +122,13 @@ component-preview pre {
 	margin-right: .25em;
 }
 
+#aiur-doc .aiur-status-deprecated,
+:hover > .aiur-status-deprecated,
+.aiur-status-deprecated::before {
+	background-color: darkslategray;
+	color: white;
+}
+
 #aiur-doc .aiur-status-prototype,
 :hover > .aiur-status-prototype,
 .aiur-status-prototype::before {
@@ -144,9 +151,11 @@ component-preview pre {
 	color: black;
 }
 
+#aiur-doc .aiur-status-deprecated::before,
+:hover > .aiur-status-deprecated::before,
 #aiur-doc .aiur-status-prototype::before,
-#aiur-doc .aiur-status-wip::before,
 :hover > .aiur-status-prototype::before,
+#aiur-doc .aiur-status-wip::before,
 :hover > .aiur-status-wip::before {
 	background-color: white;
 }

@@ -1,6 +1,6 @@
 title: Thing
 description: This is a thing
-status: wip
+status: deprecated
 tags: things, thymeleaf, example-components
 version: 0.5
 
