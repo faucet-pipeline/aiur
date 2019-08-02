@@ -28,9 +28,9 @@
 		"minimist": "^1.2.0",
 		"mkdirp": "^0.5.1",
 		"parse5": "^5.1.0",
-		"prismjs": "^1.17.1",
+		"prismjs": "^1.17.0",
 		"require-from-string": "^2.0.2",
-		"thymeleaf": "^0.17.2"
+		"thymeleaf": "^0.18.0"
 	},
 	"devDependencies": {
 		"acorn": "^7.0.0",
