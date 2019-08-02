@@ -2,6 +2,10 @@
 
 $padding-layout: 1.5rem;
 
+@mixin text-column {
+  max-width: 68ch;
+}
+
 html,
 body {
 	margin: 0;
@@ -181,10 +185,22 @@ component-preview pre {
 
 #aiur #aiur-doc {
 
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include text-column;
+	}
+
 	h1 {
 		font-size: 2.75rem;
 		margin-top: 1.5rem;
 		margin-bottom: 3rem;
+	}
+
+	p {
+		@include text-column;
 	}
 
 	a {
