@@ -35,6 +35,6 @@
 		"eslint-config-fnd": "^1.6.0",
 		"mocha": "^6.0.0",
 		"release-util-fnd": "^1.1.1",
-		"rimraf": "^2.6.3"
+		"rimraf": "^3.0.0"
 	}
 }
