@@ -1,7 +1,19 @@
 aiur version history
 ====================
 
+v0.3.1
+------
+
+_2019-08-19_
+
+significant changes for end users:
+
+* Adds a trailing slash to the component paths so they are referenced properly in
+  the iframe on simple static node http servers
+* upgrade dependencies
+
 v0.3.0
+------
 
 _2019-01-08_
 

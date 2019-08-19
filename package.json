@@ -21,20 +21,20 @@
 		"commonmark": "^0.29.0",
 		"complate-stream": "^0.16.7",
 		"faucet-pipeline-core": "^1.2.0",
-		"faucet-pipeline-jsx": "^2.0.1",
-		"faucet-pipeline-sass": "^1.1.0",
-		"faucet-pipeline-static": "^1.0.0",
+		"faucet-pipeline-jsx": "^2.0.7",
+		"faucet-pipeline-sass": "^1.3.0",
+		"faucet-pipeline-static": "^1.1.0",
 		"metacolon": "^1.0.0",
 		"minimist": "^1.2.0",
 		"mkdirp": "^0.5.1",
-		"prismjs": "^1.15.0",
+		"prismjs": "^1.17.1",
 		"require-from-string": "^2.0.2"
 	},
 	"devDependencies": {
-		"acorn": "^6.0.5",
-		"eslint-config-fnd": "^1.6.0",
-		"mocha": "^6.0.0",
+		"acorn": "^7.0.0",
+		"eslint-config-fnd": "^1.7.0",
+		"mocha": "^6.2.0",
 		"release-util-fnd": "^1.1.1",
-		"rimraf": "^2.6.3"
+		"rimraf": "^3.0.0"
 	}
 }
