@@ -6,6 +6,28 @@ $padding-layout: 1.5rem;
   max-width: 68ch;
 }
 
+// is this cool?
+@mixin nav-hover-module {
+	position: relative;
+	max-width: 24ch;
+	overflow: hidden;
+	z-index: 100;
+
+	&:hover {
+		overflow: visible;
+	}
+
+	li {
+		width: max-content;
+	}
+
+	a {
+		background-color: white;
+		border-radius: .4em;
+		padding-right: .25em;
+	}
+}
+
 html,
 body {
 	margin: 0;
@@ -44,6 +66,7 @@ h1 {
 }
 
 nav {
+	@include nav-hover-module;
 	border-right: 1px solid #f3f3f3;
 	grid-area: nav;
 	padding: $padding-layout;
@@ -57,6 +80,7 @@ nav ul {
 nav li {
 	list-style-type: none;
 	padding-left: 1rem;
+	white-space: nowrap;
 }
 
 nav > ul > li {
@@ -111,6 +135,7 @@ component-preview pre {
 	padding: 0.1em;
 	padding-right: 0.4em;
 	padding-left: .35em;
+	text-decoration: none;
 	text-transform: uppercase;
 	margin-left: .25em;
 }

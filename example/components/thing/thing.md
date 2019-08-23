@@ -1,4 +1,4 @@
-title: Thing
+title: A Thing With a Very Very Long Name
 description: This is a thing
 status: deprecated
 tags: things, thymeleaf, example-components
