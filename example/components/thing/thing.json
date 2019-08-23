@@ -1,0 +1,11 @@
+{
+	"message": "Anybody out there? This is a message from a JSON file.",
+	"list": [
+		1,
+		2,
+		3
+	],
+	"thing": {
+		"name": "Harry"
+	}
+}

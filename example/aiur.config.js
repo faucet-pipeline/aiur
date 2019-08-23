@@ -24,6 +24,7 @@ exports.pages = {
 			strong: "./components/strong/doc.md",
 			thing: {
 				file: "./components/thing/thing.md",
+				data: "./components/thing/thing.json"
 			}
 		}
 	}

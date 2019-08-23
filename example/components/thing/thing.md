@@ -19,3 +19,9 @@ This is a thing fragment
 ```thymeleaf embed some-key="Super value!"
 <div th:replace="~{components/thing/thing.html :: thing}"></div>
 ```
+
+This uses data
+
+```thymeleaf
+<div th:text="${message}">No message.</div>
+```

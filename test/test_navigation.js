@@ -11,6 +11,6 @@ describe("navigation", () => {
 
 		let navigation = new Navigation({ baseURI: "/" });
 		let result = navigation.generate(tree);
-		assertSame(result, "<ul><li><a href=\"/\">My Style Guide</a></li><li><a href=\"/atoms/\">Atoms</a><ul><li data-tags=\"clickable, please-review\"><a href=\"/atoms/button/\">Button</a><span class=\"aiur-status aiur-status-wip\">wip</span></li><li><a href=\"/atoms/strong/\">strong</a></li></ul></li></ul>");
+		assertSame(result, "<ul><li><a href=\"/\">My Style Guide</a></li><li><a href=\"/atoms/\">Atoms</a><ul><li data-tags=\"clickable, please-review\"><a href=\"/atoms/button/\">Button<span class=\"aiur-status aiur-status-wip\">wip</span></a></li><li><a href=\"/atoms/strong/\">strong</a></li></ul></li></ul>");
 	});
 });
