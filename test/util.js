@@ -5,8 +5,8 @@ let FIXTURES = path.resolve(__dirname, "fixtures");
 let EXPECTATIONS = path.resolve(__dirname, "expectations");
 
 class MockManifest {
-	get() {
-		return "/style.css";
+	get(path) {
+		return path.replace("dist", "");
 	}
 }
 
