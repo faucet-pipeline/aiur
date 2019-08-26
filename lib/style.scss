@@ -105,13 +105,13 @@ component-preview {
 	border: 2px solid #f3f3f3;
 	display: flex;
 	flex-direction: column;
-	height: 80vh;
 	margin-bottom: 1.75rem;
-	min-height: 500px;
 }
 
 component-preview iframe {
 	flex-grow: 1;
+	// height: 80vh;
+	// min-height: 500px;
 }
 
 component-preview .rendered {
