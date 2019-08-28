@@ -16,7 +16,7 @@ This is a thing
 
 This is a thing fragment
 
-```thymeleaf embed some-key="Super value!"
+```thymeleaf height="64"
 <div th:replace="~{components/thing/thing.html :: thing}"></div>
 ```
 
