@@ -65,31 +65,34 @@ h1 {
 	margin-bottom: 2rem;
 }
 
-nav {
-	@include nav-hover-module;
+#aiur-nav {
+	// @include nav-hover-module;
 	border-right: 1px solid whitesmoke;
 	grid-area: nav;
 	padding: $padding-layout;
+	position: relative;
+	overflow: hidden;
+
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	li {
+		list-style-type: none;
+		padding-left: 1rem;
+		white-space: nowrap;
+	}
+
+	> ul > li {
+		padding-left: 0;
+	}
+
+	ul > :last-child {
+		margin-bottom: .5rem;
+	}
 }
 
-nav ul {
-	list-style-type: none;
-	padding-left: 0;
-}
-
-nav li {
-	list-style-type: none;
-	padding-left: 1rem;
-	white-space: nowrap;
-}
-
-nav > ul > li {
-	padding-left: 0;
-}
-
-nav ul > :last-child {
-	margin-bottom: .5rem;
-}
 
 main {
 	grid-area: main;
@@ -131,6 +134,26 @@ tabs-control {
 external-text pre {
 	margin: 0;
 	color: darkgoldenrod;
+}
+
+resize-handle {
+	background: gainsboro;
+	position: absolute;
+
+	right: 0px;
+	width: 3px;
+	height: 100%;
+	cursor: grab;
+	top: 0;
+
+	&.dragging {
+		cursor: grabbing;
+		background: coral;
+	}
+
+	&:hover {
+		background: coral;
+	}
 }
 
 .component-preview {
@@ -265,5 +288,9 @@ external-text pre {
 		background-color: linen;
 		border-radius: .33em;
 		padding: .15em .4em;
+	}
+
+	pre > code {
+		display: block;
 	}
 }

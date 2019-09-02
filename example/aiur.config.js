@@ -16,7 +16,15 @@ exports.language = "en";
 // }
 
 exports.pages = {
-	"": "./components/welcome.md",
+	"": {
+		file: "./components/welcome.md",
+		children: {
+			languages: {
+				file: "./languages/languages.md",
+				data: "./languages/languages.data.js"
+			}
+		}
+	},
 	atoms: {
 		file: "./components/atoms.md",
 		children: {
