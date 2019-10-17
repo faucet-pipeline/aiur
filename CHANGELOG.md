@@ -1,6 +1,16 @@
 aiur version history
 ====================
 
+v0.4.0
+------
+
+_2019-09-16_
+
+significant changes for end users:
+
+* Support new CLI options (`--serve` and `--liveserve`) to host the styleguide
+  locally (with auto reload in the second case)
+
 v0.3.1
 ------
 
