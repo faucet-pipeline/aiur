@@ -1,11 +1,10 @@
 {
 	"scripts": {
-		"start": "aiur --watch --liveserve",
+		"start": "aiur --watch --liveserve localhost:3333",
 		"compile": "aiur --fingerprint --compact"
 	},
 	"dependencies": {
 		"aiur": "..",
-		"live-server": "^1.2.1",
 		"prismjs": "^1.15.0"
 	}
 }
