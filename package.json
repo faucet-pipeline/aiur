@@ -1,6 +1,6 @@
 {
 	"name": "aiur",
-	"version": "0.4.4",
+	"version": "0.5.0",
 	"description": "styleguide generator",
 	"main": "lib/index.js",
 	"bin": {
