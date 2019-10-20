@@ -29,7 +29,23 @@ describe("page renderer", () => {
 		let pageRenderer = new PageRenderer({ renderers, layout });
 		let result = await pageRenderer.render(page);
 
-		assertSame(result.trim(), '<component-preview>\n\t\t  <iframe src="0.html" class="rendered"></iframe>\n\t\t  <pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span>\n</pre>\n\t\t</component-preview>');
+		assertSame(result.trim(), `<tabs-control role="tablist">
+	<button role="tab" aria-selected="true" aria-controls="_0-html-frame">
+		Preview
+	</button>
+	<button role="tab" aria-selected="false" aria-controls="_0-html-pre">
+		Source
+	</button>
+	<button role="tab" aria-selected="false" aria-controls="_0-html-post">
+		HTML
+	</button>
+</tabs-control>
+<component-preview preview="rendered" class="component-preview" >
+	<iframe id="_0-html-frame" class="component-preview-frame rendered" src="0.html"></iframe>
+	<pre hidden id="_0-html-pre" class="component-preview-pre-code"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span>
+</pre>
+	<external-text hidden id="_0-html-post" class="component-preview-post-code" src="0.html" wrap="pre"></external-text>
+</component-preview>`);
 
 		let renderedSnippets = await pageRenderer.renderedSnippets();
 		assertSame(renderedSnippets.length, 1);

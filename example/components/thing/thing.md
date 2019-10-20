@@ -11,7 +11,7 @@ Non ut aliqua nulla proident commodo aliquip amet exercitation voluptate proiden
 This is a thing
 
 ```thymeleaf
-<div class="thing" th:text="'Thymeleaf ON'">Thymeleaf OFF</div>
+<i class="fas fa-leaf"></i> <span class="thing" th:text="'Thymeleaf ON'">Thymeleaf OFF</span>
 ```
 
 This is a thing fragment

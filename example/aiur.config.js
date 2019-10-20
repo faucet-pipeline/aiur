@@ -3,17 +3,22 @@
 exports.title = "Example Styleguide";
 exports.language = "en";
 
-// TODO is this a good idea?
-// exports.styles = [{
-// 	sass: "./components/index.scss"
-// }];
+exports.sass = [{
+	source: "./index.scss"
+}];
 
-// TODO configs for languages
-// exports.language = {
-// 	thymeleaf: {
-//
-// 	}
-// }
+exports.js = [{
+	source: "./index.js"
+}];
+
+exports.vendor = {
+	styles: [{
+		crossorigin: "anonymous",
+		integrity: "sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU",
+		href: "https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+	}],
+	scripts: []
+};
 
 exports.pages = {
 	"": {

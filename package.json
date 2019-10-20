@@ -1,6 +1,6 @@
 {
 	"name": "aiur",
-	"version": "0.4.3",
+	"version": "0.4.4",
 	"description": "styleguide generator",
 	"main": "lib/index.js",
 	"bin": {
@@ -32,7 +32,7 @@
 		"minimist": "^1.2.0",
 		"mkdirp": "^0.5.1",
 		"parse5": "^5.1.0",
-		"prismjs": "^1.17.0",
+		"prismjs": "^1.17.1",
 		"require-from-string": "^2.0.2",
 		"thymeleaf": "^0.18.0"
 	},

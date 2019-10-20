@@ -8,6 +8,14 @@ class MockManifest {
 	get(path) {
 		return path.replace("dist", "");
 	}
+
+	toJSON() {
+		return {
+			"dist/style-guide-0.css": "style-guide-0.css",
+			"dist/style-guide-1.css": "style-guide-1.css",
+			"dist/script-guide-1.css": "script-guide-1.css"
+		};
+	}
 }
 
 exports.MockAssetManager = class MockAssetManager {

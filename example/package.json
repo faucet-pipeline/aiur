@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"start": "aiur --watch --liveserve localhost:3333",
+		"start": "aiur --watch --liveserve",
 		"compile": "aiur --fingerprint --compact"
 	},
 	"dependencies": {
