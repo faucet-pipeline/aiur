@@ -1,6 +1,20 @@
 aiur version history
 ====================
 
+v0.5.1
+------
+
+Several feature implementations
+
+* added: additionally (temporarily) included languages: handlebars, Thymeleaf
+* added: code blocks process parameters, height parameter actually has effect
+* added: injectable context data for snippet rendering
+* added: ability to inject target assets (scss, js)
+* added: ability to add remote "vendor assets", e.g. font awesome icons
+* added: more document meta data gets processed: status, version, tags, ...
+* added: tabbed snippet views: preview, source, markup result
+* added: status badges
+
 v0.4.0
 ------
 
