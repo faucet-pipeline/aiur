@@ -11,6 +11,9 @@ max_line_length = 80
 indent_style = tab
 indent_size = 4
 
+[test/expectations/**.html]
+insert_final_newline = false
+
 [*.md]
 indent_style = space
 
