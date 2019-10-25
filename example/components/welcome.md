@@ -1,3 +1,5 @@
-title: A Styleguide
+title: Aiur
 
-Welcome to the styleguide
+Welcome to [Aiur](https://github.com/moonglum/aiur).
+
+some `code`

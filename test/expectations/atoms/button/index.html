@@ -1,22 +1,38 @@
 <!doctype html>
-  <html lang="de">
+<html lang="de">
 	<head>
-	  <meta charset="utf-8">
-	  <title>Button</title>
-      <meta name="description" content="interactive widget">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-	  <link href="/style.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>Button</title>
+		<meta name="description" content="interactive widget">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="/style-aiur.css" rel="stylesheet">
 	</head>
-	<body>
-	  <nav><ul><li><a href="/">My Style Guide</a></li><li><a href="/atoms/">Atoms</a><ul><li><a href="/atoms/button/">Button</a></li><li><a href="/atoms/strong/">strong</a></li></ul></li></ul></nav>
-	  <main>
-		  <h1>Button</h1>
-		  <p>My favorite button:</p>
-<component-preview>
-		  <iframe src="0.html" class="rendered"></iframe>
-		  <pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+	<body id="aiur">
+		<nav id="aiur-nav">
+			<resize-handle id="aiur-nav-resize-handle" for="aiur-nav" direction="x" remember></resize-handle>
+			<ul><li><a href="/">My Style Guide</a></li><li><a href="/atoms/">Atoms</a><ul><li data-tags="clickable, please-review"><a href="/atoms/button/">Button<span class="aiur-status aiur-status-wip">wip</span></a></li><li><a href="/atoms/strong/">strong</a></li></ul></li></ul>
+		</nav>
+		<main id="aiur-doc"><div class="aiur-doc-meta">atoms/button • tags: clickable, please-review</div>
+		<h1>Button<span class="aiur-status aiur-status-wip">wip</span></h1>
+		<p>My favorite button:</p>
+<tabs-control role="tablist">
+	<button role="tab" aria-selected="true" aria-controls="_0-html-frame">
+		Preview
+	</button>
+	<button role="tab" aria-selected="false" aria-controls="_0-html-pre">
+		Source
+	</button>
+	<button role="tab" aria-selected="false" aria-controls="_0-html-post">
+		HTML
+	</button>
+</tabs-control>
+<component-preview preview="rendered" class="component-preview"  embed="" key="value">
+	<iframe id="_0-html-frame" class="component-preview-frame rendered" src="0.html"></iframe>
+	<pre hidden id="_0-html-pre" class="component-preview-pre-code"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 </pre>
-		</component-preview>
-	  </main>
+	<external-text hidden id="_0-html-post" class="component-preview-post-code" src="0.html" wrap="pre"></external-text>
+</component-preview>
+		</main>
+		<script src="/script-aiur.js"></script>
 	</body>
-  </html>
+</html>
