@@ -30,7 +30,7 @@
 		"live-server": "^1.2.1",
 		"metacolon": "^1.0.0",
 		"minimist": "^1.2.0",
-		"mkdirp": "^0.5.1",
+		"mkdirp": "^1.0.0",
 		"parse5": "^5.1.0",
 		"prismjs": "^1.17.1",
 		"require-from-string": "^2.0.2",
