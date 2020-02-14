@@ -16,7 +16,7 @@ This is a thing
 
 This is a thing fragment
 
-```thymeleaf height="64"
+```thymeleaf height="64" width="320"
 <div th:replace="~{components/thing/thing.html :: thing}"></div>
 ```
 
