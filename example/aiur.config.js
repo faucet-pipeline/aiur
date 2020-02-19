@@ -3,13 +3,15 @@
 exports.title = "Example Styleguide";
 exports.language = "en";
 
-exports.sass = [{
-	source: "./index.scss"
-}];
+exports.snippetAssets = {
+	sass: [{
+		source: "./index.scss"
+	}],
 
-exports.js = [{
-	source: "./index.js"
-}];
+	js: [{
+		source: "./index.js"
+	}]
+};
 
 exports.vendor = {
 	styles: [{
