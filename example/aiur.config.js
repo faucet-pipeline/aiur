@@ -5,11 +5,13 @@ exports.language = "en";
 
 exports.snippetAssets = {
 	sass: [{
-		source: "./index.scss"
+		source: "./index.scss",
+		target: "./snippet.css"
 	}],
 
 	js: [{
-		source: "./index.js"
+		source: "./index.js",
+		target: "./snippet.js"
 	}]
 };
 
