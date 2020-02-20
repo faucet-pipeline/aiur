@@ -6,14 +6,14 @@ let EXPECTATIONS = path.resolve(__dirname, "expectations");
 
 class MockManifest {
 	get(path) {
-		return path.replace("dist", "");
+		return `/${path}`;
 	}
 
 	toJSON() {
 		return {
-			"dist/snippet-0.css": "snippet-0.css",
-			"dist/snippet-1.css": "snippet-1.css",
-			"dist/snippet-1.js": "snippet-1.js"
+			"snippet-0.css": "snippet-0.css",
+			"snippet-1.css": "snippet-1.css",
+			"snippet-1.js": "snippet-1.js"
 		};
 	}
 }
