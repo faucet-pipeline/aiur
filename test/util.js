@@ -11,9 +11,9 @@ class MockManifest {
 
 	toJSON() {
 		return {
-			"dist/style-guide-0.css": "style-guide-0.css",
-			"dist/style-guide-1.css": "style-guide-1.css",
-			"dist/script-guide-1.css": "script-guide-1.css"
+			"dist/snippet-0.css": "snippet-0.css",
+			"dist/snippet-1.css": "snippet-1.css",
+			"dist/snippet-1.js": "snippet-1.js"
 		};
 	}
 }
