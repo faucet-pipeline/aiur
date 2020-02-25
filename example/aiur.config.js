@@ -20,6 +20,15 @@ exports.vendor = {
 	scripts: []
 };
 
+exports.renderers = {
+	lymetheaf: [
+		require("lymetheaf"),
+		{
+			prefix: __dirname
+		}
+	]
+}
+
 exports.pages = {
 	"": {
 		file: "./components/welcome.md",

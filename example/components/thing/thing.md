@@ -25,3 +25,9 @@ This uses data
 ```thymeleaf
 <div th:text="${message}">No message.</div>
 ```
+
+Use the JAVA implementation "Lymetheaf"
+
+```lymetheaf
+components/thing/ding.html
+```
