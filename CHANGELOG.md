@@ -1,6 +1,16 @@
 aiur version history
 ====================
 
+v0.6.0
+------
+
+Several feature implementations
+
+* added: allow to configure the directories that are being watched
+* added: allow to add your own assets build via faucet with the `snippetAssets`
+  configuration
+* bug fix: `--target` works now
+
 v0.5.1
 ------
 
