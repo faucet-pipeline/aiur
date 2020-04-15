@@ -31,7 +31,7 @@
 		"metacolon": "^1.0.0",
 		"minimist": "^1.2.5",
 		"mkdirp": "^1.0.3",
-		"parse5": "^5.1.0",
+		"parse5": "^6.0.0",
 		"prismjs": "^1.17.1",
 		"require-from-string": "^2.0.2",
 		"thymeleaf": "^0.18.1"
