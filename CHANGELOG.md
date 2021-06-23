@@ -1,6 +1,14 @@
 aiur version history
 ====================
 
+v0.7.0
+------
+
+significant changes for end users:
+
+* update all dependencies
+* switch from live-server to five-server, because it is no longer maintained
+
 v0.6.0
 ------
 
