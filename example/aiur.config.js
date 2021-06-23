@@ -46,3 +46,5 @@ exports.pages = {
 		}
 	}
 };
+
+exports.watchDirs = ["./components", "./languages"]
