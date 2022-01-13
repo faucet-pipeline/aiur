@@ -6,6 +6,13 @@ v0.7.0
 
 significant changes for end users:
 
+* update all dependencies with vulnerabilities
+
+v0.7.0
+------
+
+significant changes for end users:
+
 * update all dependencies
 * switch from live-server to five-server, because it is no longer maintained
 
