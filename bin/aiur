@@ -12,4 +12,6 @@ let liveserve = options.liveserve;
 delete options.liveserve;
 faucet(referenceDir, config, options);
 
-server.live(liveserve, config.manifest.webRoot);
+if (liveserve) {
+    server.live(liveserve, config.manifest.webRoot);
+}
