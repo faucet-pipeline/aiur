@@ -1,6 +1,22 @@
 aiur version history
 ====================
 
+v0.9.0
+------
+
+significant changes for end users:
+
+* bug fix: Running aiur without the watch option crashed
+* added: --baseuri command line option
+* update all dependencies
+
+v0.8.0
+------
+
+significant changes for end users:
+
+* update all dependencies
+
 v0.7.0
 ------
 
