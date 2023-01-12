@@ -1,8 +1,6 @@
 # aiur
 
 [![npm](https://img.shields.io/npm/v/aiur.svg)](https://www.npmjs.com/package/aiur)
-[![build status](https://travis-ci.org/moonglum/aiur.svg?branch=master)](https://travis-ci.org/moonglum/aiur)
-[![Greenkeeper badge](https://badges.greenkeeper.io/moonglum/aiur.svg)](https://greenkeeper.io)
 
 aiur is a tool to generate style guides with a focus on pattern libraries.
 
