@@ -21,7 +21,7 @@
 		"commonmark": "^0.30.0",
 		"complate-stream": "^0.16.10",
 		"donny": "^0.3.0",
-		"faucet-pipeline-core": "^1.6.1",
+		"faucet-pipeline-core": "^2.0.0",
 		"faucet-pipeline-esnext": "^2.1.7",
 		"faucet-pipeline-jsx": "^2.1.7",
 		"faucet-pipeline-sass": "^1.7.0",
