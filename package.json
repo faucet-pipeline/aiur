@@ -23,7 +23,7 @@
 		"donny": "^0.3.0",
 		"faucet-pipeline-core": "^2.0.0",
 		"faucet-pipeline-esnext": "^2.1.7",
-		"faucet-pipeline-jsx": "^2.1.7",
+		"faucet-pipeline-jsx": "^3.0.0",
 		"faucet-pipeline-sass": "^1.7.0",
 		"faucet-pipeline-static": "^2.0.0",
 		"five-server": "^0.1.2",
