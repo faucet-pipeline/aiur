@@ -15,7 +15,7 @@
 	"author": "Lucas Dohmen <lucas@dohmen.io> (https://lucas.dohmen.io/)",
 	"license": "Apache-2.0",
 	"engines": {
-		"node": ">=8"
+		"node": ">= 18"
 	},
 	"dependencies": {
 		"commonmark": "^0.30.0",
