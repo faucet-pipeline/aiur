@@ -3,18 +3,6 @@
 exports.title = "Example Styleguide";
 exports.language = "en";
 
-exports.snippetAssets = {
-	sass: [{
-		source: "./index.scss",
-		target: "./snippet.css"
-	}],
-
-	js: [{
-		source: "./index.js",
-		target: "./snippet.js"
-	}]
-};
-
 exports.vendor = {
 	styles: [{
 		crossorigin: "anonymous",
@@ -38,13 +26,9 @@ exports.pages = {
 		file: "./components/atoms.md",
 		children: {
 			button: "./components/button/doc.md",
-			strong: "./components/strong/doc.md",
-			thing: {
-				file: "./components/thing/thing.md",
-				data: "./components/thing/thing.json"
-			}
+			strong: "./components/strong/doc.md"
 		}
 	}
 };
 
-exports.watchDirs = ["./components", "./languages"]
+exports.watchDirs = ["./components", "./languages"];

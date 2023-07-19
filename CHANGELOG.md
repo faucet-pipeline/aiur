@@ -7,6 +7,7 @@ v0.10.0
 significant changes for end users:
 
 * fix compatability with current versions of faucet-pipeline
+* remove support for JSX and Thymeleaf
 
 v0.9.0
 ------

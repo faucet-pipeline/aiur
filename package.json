@@ -19,22 +19,19 @@
 	},
 	"dependencies": {
 		"commonmark": "^0.30.0",
-		"complate-stream": "^0.16.10",
 		"donny": "^0.3.0",
 		"faucet-pipeline-core": "^2.0.0",
-		"faucet-pipeline-esnext": "^2.1.7",
-		"faucet-pipeline-jsx": "^2.1.7",
+		"faucet-pipeline-esnext": "^3.0.0",
+		"faucet-pipeline-jsx": "^3.0.0",
 		"faucet-pipeline-sass": "^1.7.0",
 		"faucet-pipeline-static": "^2.0.0",
-		"five-server": "^0.1.2",
+		"five-server": "^0.3.1",
 		"handlebars": "^4.7.7",
 		"metacolon": "^1.1.1",
 		"minimist": "^1.2.5",
 		"mkdirp": "^3.0.1",
 		"parse5": "^7.1.2",
-		"prismjs": "^1.26.0",
-		"require-from-string": "^2.0.2",
-		"thymeleaf": "^0.21.0"
+		"prismjs": "^1.26.0"
 	},
 	"devDependencies": {
 		"eslint-config-fnd": "^1.12.0",
