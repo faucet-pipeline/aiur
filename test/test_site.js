@@ -1,11 +1,8 @@
 /* global describe, it, beforeEach, afterEach */
 let Site = require("../lib/site");
 let { assertSame, fixturesPath, fixturesDir, expectationsPath, MockAssetManager } = require("./util");
-let fs = require("fs");
-let { promisify } = require("util");
-let rimraf = promisify(require("rimraf"));
-
-let readFile = promisify(fs.readFile);
+let { readFile } = require("node:fs/promises");
+let { rimraf } = require("rimraf");
 
 let assetManager = new MockAssetManager(fixturesDir);
 
