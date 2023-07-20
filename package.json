@@ -14,6 +14,13 @@
 	"keywords": [],
 	"author": "Lucas Dohmen <lucas@dohmen.io> (https://lucas.dohmen.io/)",
 	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/faucet-pipeline/aiur.git"
+	},
+	"bugs": {
+		"url": "https://github.com/faucet-pipeline/aiur/issues"
+	},
 	"engines": {
 		"node": ">= 18"
 	},
