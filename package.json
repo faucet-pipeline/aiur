@@ -26,7 +26,7 @@
 		"faucet-pipeline-jsx": "^2.1.7",
 		"faucet-pipeline-sass": "^1.7.0",
 		"faucet-pipeline-static": "^2.0.0",
-		"five-server": "^0.1.2",
+		"five-server": "^0.3.1",
 		"handlebars": "^4.7.7",
 		"metacolon": "^1.1.1",
 		"minimist": "^1.2.5",
