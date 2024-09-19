@@ -6,6 +6,8 @@ unreleased
 
 significant changes for end users:
 
+* allow to set additional meta tags via the `meta` configuration:
+    * expects an object, with the keys being the `name` and the values being the `content`
 * we no longer bundle the --serve and --live-serve dependencies - you will be asked to install them
 * reduce faucet dependencies
 * update all dependencies

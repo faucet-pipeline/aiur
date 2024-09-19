@@ -1,5 +1,9 @@
 "use strict";
 
+exports.meta = {
+	robots: "noindex"
+};
+
 exports.pages = {
 	"": "./welcome.md",
 	atoms: {
