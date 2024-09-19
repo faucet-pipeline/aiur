@@ -1,8 +1,8 @@
 aiur version history
 ====================
 
-unreleased
-----------
+v0.11.0
+-------
 
 significant changes for end users:
 
