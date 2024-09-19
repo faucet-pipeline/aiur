@@ -2,6 +2,9 @@
 
 exports.title = "Example Styleguide";
 exports.language = "en";
+exports.meta = {
+	robots: "noindex"
+};
 
 exports.vendor = {
 	styles: [{
