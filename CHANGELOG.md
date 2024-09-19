@@ -1,6 +1,15 @@
 aiur version history
 ====================
 
+unreleased
+----------
+
+significant changes for end users:
+
+* we no longer bundle the --serve and --live-serve dependencies - you will be asked to install them
+* reduce faucet dependencies
+* update all dependencies
+
 v0.10.0
 -------
 

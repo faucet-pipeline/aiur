@@ -25,14 +25,11 @@
 		"node": ">= 18"
 	},
 	"dependencies": {
-		"commonmark": "^0.30.0",
-		"donny": "^0.3.0",
+		"commonmark": "^0.31.2",
 		"faucet-pipeline-core": "^2.0.0",
-		"faucet-pipeline-esnext": "^3.0.0",
-		"faucet-pipeline-jsx": "^3.0.0",
+		"faucet-pipeline-js": "^3.0.0",
 		"faucet-pipeline-sass": "^1.7.0",
 		"faucet-pipeline-static": "^2.0.0",
-		"five-server": "^0.3.1",
 		"handlebars": "^4.7.7",
 		"metacolon": "^1.1.1",
 		"minimist": "^1.2.5",
@@ -44,6 +41,6 @@
 		"eslint-config-fnd": "^1.12.0",
 		"mocha": "^10.2.0",
 		"release-util-fnd": "^3.0.0",
-		"rimraf": "^5.0.1"
+		"rimraf": "^6.0.1"
 	}
 }

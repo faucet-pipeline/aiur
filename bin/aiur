@@ -3,15 +3,7 @@
 
 let faucet = require("faucet-pipeline-core");
 let parseCLI = require("../lib/cli");
-let server = require("../lib/server");
 
 let { referenceDir, config, options } = parseCLI();
-let liveserve = options.liveserve;
 
-// We want to use our own live-server implementation instead of faucet
-delete options.liveserve;
 faucet(referenceDir, config, options);
-
-if(liveserve) {
-	server.live(liveserve, config.manifest.webRoot);
-}
