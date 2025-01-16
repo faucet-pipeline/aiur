@@ -22,7 +22,7 @@
 		"url": "https://github.com/faucet-pipeline/aiur/issues"
 	},
 	"engines": {
-		"node": ">= 18"
+		"node": ">= 20"
 	},
 	"dependencies": {
 		"commonmark": "^0.31.2",
@@ -31,7 +31,7 @@
 		"faucet-pipeline-sass": "^1.7.0",
 		"faucet-pipeline-static": "^2.0.0",
 		"handlebars": "^4.7.7",
-		"metacolon": "^1.1.1",
+		"metacolon": "^2.0.1",
 		"minimist": "^1.2.5",
 		"mkdirp": "^3.0.1",
 		"parse5": "^7.1.2",
