@@ -1,6 +1,6 @@
-/* global describe, it */
 let Page = require("../lib/page");
 let { assertSame, fixturesPath } = require("./util");
+let { describe, it } = require("node:test");
 
 describe("page model", () => {
 	it("should load metadata from the corresponding file", async () => {
