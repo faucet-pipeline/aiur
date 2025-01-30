@@ -1,7 +1,7 @@
-/* global describe, it */
 let generatePageTree = require("../lib/tree");
 let Navigation = require("../lib/navigation");
 let { assertSame, fixturesPath, fixturesDir } = require("./util");
+let { describe, it } = require("node:test");
 
 describe("navigation", () => {
 	it("should generate a navigation", async () => {

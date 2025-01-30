@@ -1,7 +1,7 @@
-/* global describe, it */
 let generatePageTree = require("../lib/tree");
 let { assertDeep, assertSame, fixturesPath, fixturesDir } = require("./util");
 let { repr } = require("faucet-pipeline-core/lib/util");
+let { describe, it } = require("node:test");
 
 describe("page hierarchy", () => {
 	it("should turn page descriptors into a tree of pages", async () => {
