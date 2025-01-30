@@ -1,6 +1,6 @@
-/* global describe, it */
 let PageRenderer = require("../lib/page_renderer");
 let { assertSame } = require("./util");
+let { describe, it } = require("node:test");
 
 class FauxPage {
 	constructor({ body }) {
