@@ -7,8 +7,8 @@ jobs:
         strategy:
             matrix:
                 node-version:
-                - 18.x
                 - 20.x
+                - latest
         steps:
         - uses: actions/checkout@v4
         - uses: actions/setup-node@v4
