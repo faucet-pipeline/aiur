@@ -26,7 +26,7 @@
 	},
 	"dependencies": {
 		"commonmark": "^0.31.2",
-		"faucet-pipeline-core": "^2.0.0",
+		"faucet-pipeline-core": "^3.0.0",
 		"faucet-pipeline-js": "^3.0.0",
 		"faucet-pipeline-sass": "^1.7.0",
 		"faucet-pipeline-static": "^2.0.0",
