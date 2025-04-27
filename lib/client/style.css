@@ -1,40 +1,12 @@
-@use "prismjs/themes/prism";
-
-$padding-layout: 1.5rem;
-
-@mixin text-column {
-  max-width: 68ch;
-}
-
-// is this cool?
-@mixin nav-hover-module {
-	position: relative;
-	max-width: 24ch;
-	overflow: hidden;
-	z-index: 100;
-
-	&:hover {
-		overflow: visible;
-	}
-
-	li {
-		width: max-content;
-	}
-
-	a {
-		background-color: white;
-		border-radius: .4em;
-		padding-right: .25em;
-	}
+:root {
+	--padding-layout: 1.5rem;
+	--text-column-max-width: 68ch;
 }
 
 html,
 body {
+	font-family: system-ui;
 	margin: 0;
-	padding: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-	font-size: 14px;
 }
 
 @media (min-width: 740px) {
@@ -66,37 +38,35 @@ h1 {
 }
 
 #aiur-nav {
-	// @include nav-hover-module;
 	border-right: 1px solid whitesmoke;
 	grid-area: nav;
-	padding: $padding-layout;
+	padding: var(--padding-layout);
 	position: relative;
 	overflow: hidden;
-
-	ul {
-		list-style-type: none;
-		padding-left: 0;
-	}
-
-	li {
-		list-style-type: none;
-		padding-left: 1rem;
-		white-space: nowrap;
-	}
-
-	> ul > li {
-		padding-left: 0;
-	}
-
-	ul > :last-child {
-		margin-bottom: .5rem;
-	}
 }
 
+#aiur-nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#aiur-nav li {
+	list-style-type: none;
+	padding-left: 1rem;
+	white-space: nowrap;
+}
+
+#aiur-nav > ul > li {
+	padding-left: 0;
+}
+
+#aiur-nav ul > :last-child {
+	margin-bottom: .5rem;
+}
 
 main {
 	grid-area: main;
-	padding: $padding-layout;
+	padding: var(--padding-layout);
 }
 
 main > :first-child,
@@ -107,28 +77,27 @@ nav > :first-child {
 tabs-control {
 	display: block;
 	margin: 1.5rem 0 1rem;
+}
 
-	> [aria-selected] {
-		appearance: none;
-		-webkit-appearance: none;
-		border: 2px solid transparent;
-		border-radius: 2em;
-		cursor: pointer;
-		font-size: 1rem;
-		margin: 0;
-		margin-right: .75rem;
-		padding: .5em 1em;
-	}
+tabs-control > [aria-selected] {
+	appearance: none;
+	border: 2px solid transparent;
+	border-radius: 2em;
+	cursor: pointer;
+	font-size: 1rem;
+	margin: 0;
+	margin-right: .75rem;
+	padding: .5em 1em;
+}
 
-	> [aria-selected=true] {
-		background: whitesmoke;
-		font-weight: bold;
-		box-shadow: 2px 2px 0 0 silver;
-	}
+tabs-control > [aria-selected=true] {
+	background: whitesmoke;
+	font-weight: bold;
+	box-shadow: 2px 2px 0 0 silver;
+}
 
-	> [aria-selected=false] {
-		background: transparent;
-	}
+tabs-control > [aria-selected=false] {
+	background: transparent;
 }
 
 external-text pre {
@@ -139,21 +108,20 @@ external-text pre {
 resize-handle {
 	background: gainsboro;
 	position: absolute;
-
 	right: 0px;
 	width: 3px;
 	height: 100%;
 	cursor: grab;
 	top: 0;
+}
 
-	&.dragging {
-		cursor: grabbing;
-		background: coral;
-	}
+resize-handle.dragging {
+	cursor: grabbing;
+	background: coral;
+}
 
-	&:hover {
-		background: coral;
-	}
+resize-handle:hover {
+	background: coral;
 }
 
 .component-preview {
@@ -161,10 +129,10 @@ resize-handle {
 	flex-direction: column;
 	margin-bottom: 3.5rem;
 	margin-top: 1rem;
+}
 
-	> * {
-		margin-top: 1rem;
-	}
+.component-preview > * {
+	margin-top: 1rem;
 }
 
 .component-preview-frame {
@@ -203,45 +171,45 @@ resize-handle {
 	margin-right: .25em;
 }
 
-#aiur-doc .aiur-status-deprecated,
+.aiur-status-deprecated,
 :hover > .aiur-status-deprecated,
 .aiur-status-deprecated::before {
 	background-color: darkslategray;
 	color: white;
 }
 
-#aiur-doc .aiur-status-prototype,
+.aiur-status-prototype,
 :hover > .aiur-status-prototype,
 .aiur-status-prototype::before {
 	background-color: darkred;
 	color: white;
 }
 
-#aiur-doc .aiur-status-wip,
+.aiur-status-wip,
 :hover > .aiur-status-wip,
 .aiur-status-wip::before {
 	background-color: coral;
 	color: white;
 }
 
-#aiur-doc .aiur-status-ready,
-#aiur-doc .aiur-status-ready::before,
+.aiur-status-ready,
+.aiur-status-ready::before,
 :hover > .aiur-status-ready,
 :hover > .aiur-status-ready::before {
 	background-color: springgreen;
 	color: black;
 }
 
-#aiur-doc .aiur-status-deprecated::before,
+.aiur-status-deprecated::before,
 :hover > .aiur-status-deprecated::before,
-#aiur-doc .aiur-status-prototype::before,
+.aiur-status-prototype::before,
 :hover > .aiur-status-prototype::before,
-#aiur-doc .aiur-status-wip::before,
+.aiur-status-wip::before,
 :hover > .aiur-status-wip::before {
 	background-color: white;
 }
 
-#aiur-doc .aiur-status-ready::before,
+.aiur-status-ready::before,
 :hover > .aiur-status-ready::before {
 	background-color: black;
 }
@@ -252,45 +220,41 @@ resize-handle {
 	font-size: .875rem;
 	letter-spacing: .02em;
 	padding-bottom: .75rem;
+}
 
-	&:hover {
-		color: black;
-	}
+.aiur-doc-meta:hover {
+	color: black;
 }
 
 /* aiur-doc markdown */
+#aiur-doc h2,
+#aiur-doc h3,
+#aiur-doc h4,
+#aiur-doc h5,
+#aiur-doc h6 {
+	max-width: var(--text-column-max-width);
+}
 
-#aiur #aiur-doc {
+#aiur-doc h1 {
+	font-size: 2.75rem;
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+}
 
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@include text-column;
-	}
+#aiur-doc p {
+	max-width: var(--text-column-max-width);
+}
 
-	h1 {
-		font-size: 2.75rem;
-		margin-top: 1.5rem;
-		margin-bottom: 3rem;
-	}
+#aiur-doc a {
+	color: royalblue;
+}
 
-	p {
-		@include text-column;
-	}
+#aiur-doc code {
+	background-color: linen;
+	border-radius: .33em;
+	padding: .15em .4em;
+}
 
-	a {
-		color: royalblue;
-	}
-
-	code {
-		background-color: linen;
-		border-radius: .33em;
-		padding: .15em .4em;
-	}
-
-	pre > code {
-		display: block;
-	}
+#aiur-doc pre > code {
+	display: block;
 }
