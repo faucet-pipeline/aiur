@@ -1,6 +1,6 @@
 {
 	"name": "aiur",
-	"version": "0.11.0",
+	"version": "0.12.0",
 	"description": "styleguide generator",
 	"main": "lib/index.js",
 	"bin": {
@@ -22,23 +22,22 @@
 		"url": "https://github.com/faucet-pipeline/aiur/issues"
 	},
 	"engines": {
-		"node": ">= 18"
+		"node": ">= 20"
 	},
 	"dependencies": {
 		"commonmark": "^0.31.2",
-		"faucet-pipeline-core": "^2.0.0",
-		"faucet-pipeline-js": "^3.0.0",
-		"faucet-pipeline-sass": "^1.7.0",
-		"faucet-pipeline-static": "^2.0.0",
+		"faucet-pipeline-core": "git+https://github.com/faucet-pipeline/faucet-pipeline-core.git#util-cleanup",
 		"handlebars": "^4.7.7",
-		"metacolon": "^2.0.2",
+		"metacolon": "^2.0.3",
 		"minimist": "^1.2.5",
 		"mkdirp": "^3.0.1",
 		"parse5": "^7.1.2",
 		"prismjs": "^1.26.0"
 	},
 	"devDependencies": {
+		"donny": "^0.3.0",
 		"eslint-config-fnd": "^1.12.0",
+		"nite-owl": "^5.0.5",
 		"release-util-fnd": "^3.0.0",
 		"rimraf": "^6.0.1"
 	}
