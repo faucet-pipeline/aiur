@@ -26,7 +26,7 @@
 	},
 	"dependencies": {
 		"commonmark": "^0.31.2",
-		"faucet-pipeline-core": "git+https://github.com/faucet-pipeline/faucet-pipeline-core.git#util-cleanup",
+		"faucet-pipeline-core": "^4.0.0",
 		"handlebars": "^4.7.7",
 		"metacolon": "^2.0.3",
 		"minimist": "^1.2.5",
@@ -35,7 +35,7 @@
 		"prismjs": "^1.26.0"
 	},
 	"devDependencies": {
-		"donny": "^0.3.0",
+		"donny": "^0.4.0",
 		"eslint-config-fnd": "^1.12.0",
 		"nite-owl": "^5.0.5",
 		"release-util-fnd": "^3.0.0",
