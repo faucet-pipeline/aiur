@@ -1,10 +1,9 @@
 {
 	"scripts": {
-		"start": "aiur --watch --liveserve",
+		"start": "aiur --watch --serve 0.0.0.0:8080",
 		"compile": "aiur --fingerprint --compact"
 	},
 	"dependencies": {
-		"aiur": "..",
-		"prismjs": "^1.17.0"
+		"aiur": ".."
 	}
 }

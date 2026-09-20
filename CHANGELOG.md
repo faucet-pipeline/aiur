@@ -1,6 +1,15 @@
 aiur version history
 ====================
 
+v0.12.0
+-------
+
+_TBD_
+
+maintenance release to update dependencies
+
+* bumped Node requirement to v20 or later, dropping support for obsolete versions
+
 v0.11.0
 -------
 
